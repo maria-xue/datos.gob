@@ -2,8 +2,8 @@
 FROM ontotext/graphdb:10.1.5
 
 # Abrimos directorio de trabajo
-RUN mkdir /datos
-WORKDIR /datos
+RUN mkdir /opt/datos
+WORKDIR /opt/datos
 
 # Descarga de archivos
 RUN curl -0 https://datos.iepnb.es/datasets/incendios-forestales.tgz
