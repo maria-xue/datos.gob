@@ -6,7 +6,8 @@ RUN mkdir /root/graphdb-import
 WORKDIR /root/graphdb-import
 
 # Descarga de archivos
-RUN wget -O data.tgz https://datos.iepnb.es/datasets/incendios-forestales.tgz
+RUN wget -O detalle.ttl https://www.zaragoza.es/sede/servicio/oferta-empleo/690.ttl && \
+    wget -O listado.ttl https://www.zaragoza.es/sede/servicio/oferta-empleo/list.ttl
 
 # Exponer el puerto 7200
 EXPOSE 7200
