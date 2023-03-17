@@ -38,3 +38,24 @@ Lo creas con las especificaciones que usted quiera y selecciona el fichero rdf q
 
 
 ## Uso imagen DockerHub
+
+1. Descargamos la imagen:
+
+$ docker pull alejandrogomezalonso/empleos-zaragoza
+
+
+2. Creamos contenedor con la imagen:
+
+$ docker run -p 7200:7200 --name <nombre_contendor> alejandrogomezalonso/empleos-zaragoza
+
+
+3. Abrimos el puerto en el navegador:
+
+localhost:7200
+
+
+4. Consulta SPARQL:
+
+Encontramos que ya hay un repositorio rdf creado con los datos ya introducidos, solo tenemos que seleccionarlos para hacer la consulta sobre el .ttl que queramos.
+
+Como ejemplo, podemos hacer la siguiente:
